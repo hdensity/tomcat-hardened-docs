@@ -258,6 +258,15 @@ This feature enables greater control of file permissions written outside the con
 
 Note that containers that inherit this container and have overridden `entrypoint.sh` will have to take into account user `tomcat` is no longer assumed in the `Dockerfile`. Rather the `tomcat` user is now created within the `entrypoint.sh` and those overriding `entrypoint.sh` should take this fact into account. Also note that this UID/GID configuration option will not work on operating systems where Docker is not native (e.g., macOS).
 
+# Contributing
+
+To contribute to this project, have a look at the github repositories [hdensity/tomcat-hardened](https://github.com/hdensity/tomcat-hardened) and [hdensity/tomcat-hardened-docs](https://github.com/hdensity/tomcat-hardened-docs). Feed free to file an issue or create pull requests.
+
+# Acknowledgements
+
+* The official [tomcat docker](https://github.com/docker-library/tomcat) and [documentation](https://github.com/docker-library/docs/tree/master/tomcat) github projects ([Apache License Version 2.0](https://www.apache.org/licenses/LICENSE-2.0))
+* [Unidata/tomcat-docker](https://github.com/Unidata/tomcat-docker) for the inspiration to create this project (and a big part of this README.md) ([BSD 3-Clause License](https://github.com/Unidata/tomcat-docker/blob/master/LICENSE))
+
 # License
 
 View [license information](https://www.apache.org/licenses/LICENSE-2.0) for the software contained in this image.
