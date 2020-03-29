@@ -3,6 +3,4 @@ language: node_js
 node_js:
   - 12
 
-sudo: false
-
 script: node update_desc.js
